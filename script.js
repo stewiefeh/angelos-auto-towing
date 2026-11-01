@@ -11,6 +11,10 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
     targets.forEach(function (t) { t.classList.add('reveal'); io.observe(t); });
+    // fail-safe: nothing stays hidden even if the observer never fires
+    setTimeout(function () {
+      targets.forEach(function (t) { t.classList.add('seen'); });
+    }, 1800);
   }
 
   // mobile call bar appears after the hero

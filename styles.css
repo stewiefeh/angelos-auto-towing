@@ -238,7 +238,7 @@ strong{font-weight:600}
 .worklist li:hover{transform:translateX(8px)}
 .worklist li:hover::before{transform:scaleY(1)}
 .worklist strong{font-family:var(--font-caps);font-weight:600;font-size:1.25rem;letter-spacing:.04em;text-transform:uppercase}
-.worklist span{color:var(--bone-dim);font-size:.95rem}
+.worklist span{color:#d8d2c6;font-size:.95rem}
 @media (max-width:860px){
   .lane,.lane-alt{grid-template-columns:1fr}
   .lane-alt .lane-photo{order:0}

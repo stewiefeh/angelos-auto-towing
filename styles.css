@@ -259,7 +259,7 @@ strong{font-weight:600}
   max-width:1150px;margin:0 auto;
   display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:center;
 }
-.shop-photos{position:relative;padding-bottom:3.5rem}
+.shop-photos{position:relative;padding-bottom:4.25rem}
 .plate{
   background:#fff;padding:.55rem .55rem 2.6rem;
   box-shadow:0 12px 30px rgba(0,0,0,.28);
@@ -271,8 +271,8 @@ strong{font-weight:600}
   font-family:var(--font-caps);font-weight:600;font-size:.92rem;
   letter-spacing:.1em;text-transform:uppercase;color:#5c564c;
 }
-.plate-a{transform:rotate(-2.5deg);width:min(21rem,100%);position:relative;z-index:2}
-.plate-b{position:absolute;right:0;bottom:0;width:min(14.5rem,58%);transform:rotate(3deg);z-index:1}
+.plate-a{transform:rotate(-2.5deg);width:min(18.5rem,100%);position:relative;z-index:2}
+.plate-b{position:absolute;right:-.6rem;bottom:-.6rem;width:min(13rem,55%);transform:rotate(3deg);z-index:1}
 .shop-copy p{margin-top:1.2rem;max-width:36rem}
 .shop-callout{
   margin-top:1.6rem;padding:.9rem 1.1rem;

@@ -282,7 +282,10 @@ strong{font-weight:600}
 }
 @media (max-width:860px){
   .shop-inner{grid-template-columns:1fr}
-  .shop-photos{padding-bottom:2.5rem;max-width:24rem;margin:0 auto}
+  .shop-photos{padding-bottom:2.5rem;max-width:22rem;margin:0 auto}
+  .plate-a{width:min(17rem,92%)}
+  .plate-b{position:static;width:min(13rem,70%);margin:1.1rem 0 0 auto}
+  .stamp{right:0;top:-.9rem}
 }
 
 /* ---------- reviews ---------- */

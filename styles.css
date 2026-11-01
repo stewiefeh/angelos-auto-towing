@@ -70,7 +70,7 @@ strong{font-weight:600}
 .topnav{display:flex;gap:1.6rem;margin-left:auto}
 .topnav a{
   font-family:var(--font-caps);font-weight:600;letter-spacing:.09em;text-transform:uppercase;
-  font-size:.95rem;color:var(--bone-dim);text-decoration:none;padding:.3rem 0;
+  font-size:1.02rem;padding:.45rem 0;color:var(--bone-dim);text-decoration:none;padding:.3rem 0;
   border-bottom:2px solid transparent;transition:color .15s,border-color .15s;
 }
 .topnav a:hover{color:var(--bone);border-color:var(--red)}
@@ -156,7 +156,7 @@ strong{font-weight:600}
 }
 .trust{
   font-family:var(--font-caps);font-weight:600;font-size:.95rem;
-  letter-spacing:.07em;text-transform:uppercase;color:var(--bone-dim);
+  letter-spacing:.07em;text-transform:uppercase;color:var(--bone);
   display:inline-flex;align-items:center;gap:.45rem;
 }
 .star{color:var(--red-soft)}
@@ -169,11 +169,17 @@ strong{font-weight:600}
 
 /* ---------- sign strip marquee ---------- */
 .signstrip{
-  background:var(--red);
+  position:relative;background:var(--red);
   border-top:4px solid var(--red-deep);
   border-bottom:4px solid var(--red-deep);
   overflow:hidden;padding:.55rem 0;
 }
+.signstrip::before,.signstrip::after{
+  content:"";position:absolute;top:0;bottom:0;width:8%;z-index:2;pointer-events:none;
+}
+.signstrip::before{left:0;background:linear-gradient(90deg,var(--red-deep),transparent)}
+.signstrip::after{right:0;background:linear-gradient(-90deg,var(--red-deep),transparent)}
+
 .signstrip-track{
   display:flex;align-items:center;gap:2.2rem;width:max-content;
   animation:slide 28s linear infinite;
@@ -334,7 +340,7 @@ strong{font-weight:600}
 .foot-lockup .brand-script{font-family:var(--font-script);font-size:1.7rem;color:var(--bone)}
 .foot-caps{font-family:var(--font-caps);font-weight:600;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-dim);margin-left:.4rem}
 .foot-line{font-size:.92rem;color:var(--bone-dim)}
-.foot-line.dim{font-size:.85rem;opacity:.75}
+.foot-line.dim{font-size:.88rem;color:var(--bone-dim);opacity:1}
 
 /* ---------- mobile call bar ---------- */
 .callbar{
@@ -350,16 +356,16 @@ strong{font-weight:600}
 @media (min-width:901px){.callbar{display:none}}
 
 /* ---------- motion ---------- */
-.paint{clip-path:inset(0 100% 0 0);animation:paint 1s cubic-bezier(.77,0,.18,1) .35s forwards}
+.paint{clip-path:inset(0 100% 0 0);animation:paint .8s cubic-bezier(.77,0,.18,1) .2s forwards}
 @keyframes paint{to{clip-path:inset(0 0 0 0)}}
-.stamp{opacity:0;transform:scale(1.12);animation:stamp .45s cubic-bezier(.2,.9,.3,1.4) 1.15s forwards}
+.stamp{opacity:0;transform:scale(1.12);animation:stamp .4s cubic-bezier(.2,.9,.3,1.4) .85s forwards}
 @keyframes stamp{to{opacity:1;transform:scale(1)}}
-.rise{opacity:0;transform:translateY(16px);animation:rise .6s ease forwards}
-.rise:nth-of-type(3){animation-delay:.25s}
-.rise:nth-of-type(4){animation-delay:.4s}
-.rise:nth-of-type(5){animation-delay:.55s}
+.rise{opacity:0;transform:translateY(16px);animation:rise .5s ease forwards}
+.rise:nth-of-type(2){animation-delay:.15s}
+.rise:nth-of-type(3){animation-delay:.3s}
+.rise:nth-of-type(4){animation-delay:.45s}
 @keyframes rise{to{opacity:1;transform:none}}
-.roll{opacity:0;transform:translateX(40px) rotate(4deg);animation:roll .8s cubic-bezier(.2,.8,.2,1) .55s forwards}
+.roll{opacity:0;transform:translateX(40px) rotate(4deg);animation:roll .7s cubic-bezier(.2,.8,.2,1) .35s forwards}
 @keyframes roll{to{opacity:1;transform:rotate(1.2deg)}}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.seen{opacity:1;transform:none}

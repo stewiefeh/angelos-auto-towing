@@ -271,8 +271,8 @@ strong{font-weight:600}
   font-family:var(--font-caps);font-weight:600;font-size:.92rem;
   letter-spacing:.1em;text-transform:uppercase;color:#5c564c;
 }
-.plate-a{transform:rotate(-2.5deg);width:min(18.5rem,100%);position:relative;z-index:2}
-.plate-b{position:absolute;right:-.6rem;bottom:-.6rem;width:min(13rem,55%);transform:rotate(3deg);z-index:1}
+.plate-a{transform:rotate(-2.5deg);width:min(18.5rem,100%);position:relative;z-index:1}
+.plate-b{position:absolute;right:-.4rem;bottom:-.6rem;width:min(13rem,55%);transform:rotate(3deg);z-index:2}
 .shop-copy p{margin-top:1.2rem;max-width:36rem}
 .shop-callout{
   margin-top:1.6rem;padding:.9rem 1.1rem;

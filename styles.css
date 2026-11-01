@@ -344,6 +344,11 @@ strong{font-weight:600}
 .foot-caps{font-family:var(--font-caps);font-weight:600;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-dim);margin-left:.4rem}
 .foot-line{font-size:.92rem;color:var(--bone-dim)}
 .foot-line.dim{font-size:.88rem;color:var(--bone-dim);opacity:1}
+.foot-credit{
+  margin-top:1.4rem;font-family:var(--font-caps);font-size:.92rem;
+  letter-spacing:.08em;color:var(--bone-dim);
+}
+.foot-credit span{color:var(--teal);font-weight:600}
 
 /* ---------- mobile call bar ---------- */
 .callbar{

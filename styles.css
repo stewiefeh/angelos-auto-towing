@@ -353,7 +353,8 @@ strong{font-weight:600}
   margin-top:1.4rem;font-family:var(--font-caps);font-size:.92rem;
   letter-spacing:.08em;color:var(--bone-dim);
 }
-.foot-credit span{color:var(--teal);font-weight:600}
+.foot-credit a{color:var(--teal);font-weight:600;text-decoration:none}
+.foot-credit a:hover{text-decoration:underline;text-underline-offset:3px}
 
 /* ---------- mobile call bar ---------- */
 .callbar{
